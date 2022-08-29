@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{partial "head" .}}
+  <body>
+    {{partial "header" .}} {{ block "main" . }} {{ end }} {{ block
+    "carousel_banner" . }} {{ end }} {{ block "presentation" . }} {{ end
+    }}{{partial "footer" .}} {{partial "script" .}}
+  </body>
+</html>
