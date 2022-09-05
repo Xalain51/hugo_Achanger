@@ -67,15 +67,30 @@ h2 {
     height: 60vh;
     border-radius: 30px;
 }
-.carousel{border: 10px solid purple;}
+.carousel {
+    border: 10px solid purple;
+}
 
-.carousel-item{ height: 80vh; border: 4px solid red;
-    }
-.carousel-inner{border: 5px solid yellow;}
-.carousel-caption{border: 5px solid blue;}.carousel-indicators {
+.carousel-item {
+    height: 80vh;
+    border: 4px solid red;
+}
+
+.carousel-inner {
+    border: 5px solid yellow;
+}
+
+.carousel-caption {
+    border: 5px solid blue;
+}
+
+.carousel-indicators {
     border: 5px solid black;
 }
-.test{border: 20px solid red;}
+
+.test {
+    border: 20px solid red;
+}
 @media screen and (max-width: 768px) {
     .banner__titre__border__bot {
         width: 50%;
