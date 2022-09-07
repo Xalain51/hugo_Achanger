@@ -1,5 +1,12 @@
 {{ define "main" }}
 
 <h1>salut salut</h1>
-
+<h2 class="my-5">Articles récents</h2>
+<section id="articles" class="row g-5">
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }} {{
+  range $paginator.Pages }} {{ .Render "summary" }} {{ end }}
+  <div class="text-center my-5">
+    <a href="/posts" class="btn btn-primary">Voir tous les posts</a>
+  </div>
+</section>
 {{ end }}
