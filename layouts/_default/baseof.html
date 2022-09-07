@@ -3,7 +3,7 @@
   {{partial "head" .}}
   <body>
     {{partial "header" .}} {{ block "main" . }} {{ end }} {{ block
-    "carousel_banner" . }} {{ end }} {{ block "presentation" . }} {{ end
-    }}{{partial "footer" .}} {{partial "script" .}}
+    "carousel_banner" . }} {{ end }} {{ block "presentation" . }}{{ end }} {{
+    block "tours" . }} {{ end }}{{partial "footer" .}} {{partial "script" .}}
   </body>
 </html>

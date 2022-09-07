@@ -1,24 +1,18 @@
 .banner {
     background-color: red;
     width: 100%;
-    margin: 0 0 20px 0;
+    
     min-height: 20vh;
     display: flex;
     justify-content: center;
 }
 
-h2 {
-    font-size: 2rem;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
+
 
 .banner__titre {
     text-align: center;
     display: flex;
     flex-direction: column;
-
     width: 100%;
 }
 
@@ -37,34 +31,54 @@ h2 {
 }
 
 .presentation {
-    width: 90%;
+    width: 95%;
     border: blue 1px solid;
-    margin: auto;
+    margin: 20px auto;
+    padding: 20px 0 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    min-height: 80vh;
 
 }
 
 .presentation__photo {
+    width: 49%;
+    background-color: red;
+    border-radius: 30px; min-height: 70vh;
+}
+
+
+.presentation__bio {
+    padding: 20px;
+    width: 49%;
+    background-color: blue;
+min-height: 70vh;
+    border-radius: 30px;
+}
+.tours {
+    width: 90%;
+    border: blue 1px solid;
+    margin: auto; padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 80vh;
+
+}
+
+.tours__photo {
     width: 48%;
     background-color: red;
-    height: 60vh;
     border-radius: 30px;
 }
 
-.presentation__photo>img {
-    object-fit: contain;
-    width: 100%;
-    border: black 5px black;
 
-}
-
-.presentation__bio {
-    padding: 50px;
+.tours__bio {
+    padding: 20px;
     width: 48%;
     background-color: blue;
-    height: 60vh;
+
     border-radius: 30px;
 }
 .carousel {
@@ -91,7 +105,31 @@ h2 {
 .test {
     border: 20px solid red;
 }
+.footer{background-color: yellow; width: 100%;}
+.menu{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+     list-style: none;}
+     .footer__icone{display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40%;
+        margin: auto;}
+        .privacy{text-align: center;text-decoration: none;list-style: none;}
+a{text-decoration: none;color: black;}
+i {color: blueviolet;}
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
+   .presentation{display: flex;flex-direction: column; }
+   .presentation__photo{width: 100%;margin-bottom: 10px;}.presentation__bio{margin-top: 10px;width: 100%;}
     .banner__titre__border__bot {
         width: 50%;
     }
