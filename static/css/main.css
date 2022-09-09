@@ -32,54 +32,56 @@
 
 .presentation {
     width: 95%;
-    border: blue 1px solid;
-    margin: 20px auto;
-    padding: 20px 0 20px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 80vh;
-
+        border: 1px solid blue;
+        margin: 20px auto;
+        padding: 20px 0 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 80vh;
 }
 
 .presentation__photo {
     width: 49%;
-    background-color: red;
-    border-radius: 30px; min-height: 70vh;
+        background-color: red;
+        border-radius: 30px;
+        min-height: 70vh;
 }
 
 
 .presentation__bio {
     padding: 20px;
-    width: 49%;
-    background-color: blue;
-min-height: 70vh;
-    border-radius: 30px;
+        width: 49%;
+        border: 1px dashed black;
+        min-height: 70vh;
+        border-radius: 30px;
 }
 .tours {
-    width: 90%;
-    border: blue 1px solid;
-    margin: auto; padding: 20px 0 20px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 80vh;
+    width: 95%;
+        border: 1px solid blue;
+        margin:   auto;
+        padding: 20px 0 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 80vh;
 
 }
 
 .tours__photo {
-    width: 48%;
-    background-color: red;
-    border-radius: 30px;
+    width: 49%;
+        background-color: red;
+        border-radius: 30px;
+        min-height: 70vh;
 }
 
 
 .tours__bio {
     padding: 20px;
-    width: 48%;
-    background-color: blue;
-
-    border-radius: 30px;
+        width: 49%;
+        border: 1px dashed black;
+        min-height: 70vh;
+        border-radius: 30px; display: grid; grid-template-rows:15% 75% 10%;
 }
 .carousel {
     border: 10px solid purple;
@@ -117,7 +119,7 @@ min-height: 70vh;
         justify-content: space-between;
         width: 40%;
         margin: auto;}
-        .privacy{text-align: center;text-decoration: none;list-style: none;}
+.privacy{text-align: center;text-decoration: none;list-style: none;}
 a{text-decoration: none;color: black;}
 i {color: blueviolet;}
 
@@ -129,18 +131,71 @@ i {color: blueviolet;}
     width: 50%;
     border: red 2px solid;
 }
-
+#articles{margin: 20px auto;}
 #articles :nth-child(even) {
     flex-direction: row-reverse;
 }
-
-
-
-
-
+.contact{ width: 100%;}
+.contact__formulaire{display: flex;flex-direction: column;width: 40%;margin: 20px auto;}
+.contact__formulaire>input{margin: 10px auto;width: 100%; padding: 5px;}
+.contact__formulaire__rownamephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact__formulaire__rownamephone>input{padding: 5px;}
+.hidden{display: none;}
+.button__contact{
+        background-color: purple;
+        border: none;
+        padding: 10px;
+        border-radius: 25px;
+        width: 8vw;
+        color: white;
+        align-items: center;
+    }
+.tours__bio__button{margin: auto;}
+.button__contact__tours{
+        background-color: purple;
+        border: none;
+        padding: 10px;
+        border-radius: 25px;
+        width: 8vw;
+        color: white;
+        align-items: center; 
+    }
 @media screen and (max-width: 768px) {
-   .presentation{display: flex;flex-direction: column; }
-   .presentation__photo{width: 100%;margin-bottom: 10px;}.presentation__bio{margin-top: 10px;width: 100%;}
+.presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentation__photo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .presentation__bio {
+        margin-top: 10px;
+        width: 100%;
+    }
+        .tours {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .tours__photo {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    
+        .tours__bio {
+            margin-top: 10px;
+            width: 100%;
+        }
+                #articles :nth-child(even) {
+                    flex-direction:column;
+                }
     .banner__titre__border__bot {
         width: 50%;
     }

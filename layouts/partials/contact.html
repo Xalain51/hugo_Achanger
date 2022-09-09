@@ -1,0 +1,53 @@
+{{ define "contact" }}
+<section class="banner">
+  <div class="banner__titre">
+    <div class="banner__titre__border__top"></div>
+    <h2>Мои туры в Шампани</h2>
+    <div class="banner__titre__border__bot"></div>
+  </div>
+</section>
+<section class="contact">
+  <form
+    class="contact__formulaire"
+    name="contact"
+    netlify
+    method="POST"
+    netlify-honeypot="bot-field"
+    data-netlify="true"
+  >
+    <p class="hidden">
+      <label>
+        Don’t fill this out if you’re human: <input name="bot-field" />
+      </label>
+    </p>
+    <div class="contact__formulaire__rownamephone">
+      <input
+        type="text"
+        id="name"
+        name="user_name"
+        required
+        placeholder="Фамилия, имя"
+        style="width: 69%"
+      />
+      <input
+        type="tel"
+        placeholder="Телефон"
+        maxlength="15"
+        name="user_number"
+        required
+      />
+    </div>
+    <input
+      type="email"
+      id="mail"
+      name="user_email"
+      placeholder="@email"
+      required
+    />
+    <input type="text" placeholder="Сообщение" name="user_requests>" />
+    <div class="tours__bio__button">
+      <button type="submit" class="button__contact">Send</button>
+    </div>
+  </form>
+</section>
+{{ end }}
